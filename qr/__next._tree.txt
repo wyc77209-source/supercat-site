@@ -1,4 +1,4 @@
-:HL["/supercat-site/_next/static/chunks/3q9laspmhb0g2.css","style"]
+:HL["/supercat-site/_next/static/chunks/31lmmlikkfkt2.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"qr","h":96,"c":"$Q2"}]]
-0:{"b":"8uXIjjUATW9Y1S7KLLJ-P","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"tLS25cOnoccJE_b8cHjEi","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
