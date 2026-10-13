@@ -2,6 +2,7 @@
 <html lang="zh"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <title>CYBER HEART</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💗</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap" rel="stylesheet">
 <style>
 html,body{margin:0;height:100%;overflow:hidden;background:#000;touch-action:none}
@@ -35,7 +36,7 @@ try{
 
 const mobile=/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)||innerWidth<768;
 const COUNT=mobile?32000:50000;
-const renderer=new THREE.WebGLRenderer({antialias:false,powerPreference:'high-performance'});
+let renderer;try{renderer=new THREE.WebGLRenderer({antialias:false,powerPreference:'high-performance'})}catch(e){showErr('此设备不支持 WebGL / WebGL is not available on this device');document.getElementById('gbtn').style.display='none';throw e}
 renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight);
 document.body.prepend(renderer.domElement);
 const scene=new THREE.Scene();
