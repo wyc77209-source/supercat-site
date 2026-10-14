@@ -1,20 +1,47 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Buy Super Cat a coffee ☕</title><style>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Buy Super Cat a coffee ☕</title>
+<style>
 :root{--bg:#0a0a0a;--cream:#f5ecd7;--gold:#d4a843}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--cream);font-family:system-ui,-apple-system,"PingFang SC",sans-serif;line-height:1.5}
-main{max-width:720px;margin:0 auto;padding:32px 20px 48px}
-h1{color:var(--gold);font-size:1.6rem;margin:0 0 4px}h1 small{display:block;font-size:1.15rem;color:var(--cream);opacity:.9}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--cream);font-family:system-ui,-apple-system,"PingFang SC",sans-serif;line-height:1.5;overflow-x:hidden}
+main{max-width:720px;margin:0 auto;padding:24px 20px 48px;width:100%}
+.back{margin:0 0 20px;font-size:.95rem}
+.back a{color:var(--gold);text-decoration:none}
+.back a:hover,.back a:focus{text-decoration:underline}
+h1{color:var(--gold);font-size:1.6rem;margin:0 0 4px}
+h1 small{display:block;font-size:1.15rem;color:var(--cream);opacity:.9}
 p.lead{opacity:.85;margin:12px 0 24px}
-.cards{display:grid;gap:18px}@media(min-width:640px){.cards{grid-template-columns:1fr 1fr}}
+.cards{display:grid;gap:18px}
+@media(min-width:640px){.cards{grid-template-columns:1fr 1fr}}
 .card{border:1px solid rgba(212,168,67,.35);border-radius:16px;padding:16px;background:#131313;text-align:center}
-.card h2{color:var(--gold);font-size:1.1rem;margin:0 0 12px}.card img{width:100%;max-width:300px;border-radius:10px}
+.card h2{color:var(--gold);font-size:1.1rem;margin:0 0 12px}
+.card img{width:100%;max-width:300px;height:auto;border-radius:10px}
+.hint{margin:12px 0 0;font-size:.85rem;opacity:.8;text-wrap:balance}
 .note{margin-top:24px;font-size:.88rem;opacity:.7;border-top:1px solid rgba(245,236,215,.15);padding-top:16px}
-</style></head><body><main>
+</style>
+</head>
+<body>
+<main>
+<p class="back"><a href="/supercat-site/">← Back to Super Cat / 返回招财猫</a></p>
 <h1>Buy Super Cat a coffee ☕<small>请招财猫喝杯咖啡</small></h1>
 <p class="lead">Super Cat is free. If it saved you money, a small tip keeps it running. 免费使用，觉得有用可以随意打赏。</p>
 <div class="cards">
-<section class="card"><h2>Zelle (US)</h2><img src="zelle.png" alt="Zelle QR code"></section>
-<section class="card"><h2>支付宝 Alipay</h2><img src="alipay.png" alt="Alipay QR code"></section>
+<section class="card">
+<h2>Zelle (US)</h2>
+<img src="zelle.png" alt="Zelle QR code">
+<p class="hint">On your phone? Screenshot → Zelle → Send → scan the code from your Photos.</p>
+</section>
+<section class="card">
+<h2>支付宝 Alipay</h2>
+<img src="alipay.png" alt="Alipay QR code">
+<p class="hint">截图 → 支付宝扫一扫 → 相册</p>
+</section>
 </div>
 <p class="note">Tipping is completely optional — you get nothing extra for it, and Super Cat stays the same for everyone. 打赏完全自愿，不会解锁任何额外功能。</p>
-</main></body></html>
+</main>
+</body>
+</html>
