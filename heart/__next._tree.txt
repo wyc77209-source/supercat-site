@@ -1,4 +1,4 @@
 :HL["/supercat-site/_next/static/chunks/00cdu6636-qbg.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"heart","h":96,"c":"$Q2"}]]
-0:{"b":"UH6vQuVxStXTLhcnlGHUk","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"242K6J72rrLLzDnVNuyxy","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
