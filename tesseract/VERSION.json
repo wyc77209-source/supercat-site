@@ -1,0 +1,9 @@
+{
+  "tesseractJs": "6.0.1",
+  "tesseractJsCore": "6.1.2",
+  "langs": [
+    "eng.traineddata.gz",
+    "chi_sim.traineddata.gz"
+  ],
+  "pinnedLang": "4.0.0_best_int"
+}
