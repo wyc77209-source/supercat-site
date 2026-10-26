@@ -1,4 +1,4 @@
 :HL["/supercat-site/_next/static/chunks/1li59lmb2u-ch.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
-0:{"b":"FjpOKHwTkDCKBc-oOIdpk","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"5_n7JLTh2zV9H2rEghVPb","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
