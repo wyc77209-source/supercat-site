@@ -21,41 +21,189 @@
 <style>
 :root{--bg:#0a0a0a;--cream:#f5ecd7;--gold:#d4a843}
 *{box-sizing:border-box}
-html,body{margin:0;background:var(--bg);color:var(--cream);font-family:system-ui,-apple-system,"PingFang SC",sans-serif;line-height:1.5;overflow-x:hidden}
-main{max-width:720px;margin:0 auto;padding:24px 20px 48px;width:100%}
-.back{margin:0 0 20px;font-size:.95rem}
+html,body{margin:0;background:var(--bg);color:var(--cream);font-family:system-ui,-apple-system,"PingFang SC","Hiragino Sans",sans-serif;line-height:1.5;overflow-x:hidden}
+main{max-width:720px;margin:0 auto;padding:24px 20px 48px;width:100%;min-width:0}
+.back{margin:0 0 20px;font-size:.95rem;overflow-wrap:anywhere}
 .back a{color:var(--gold);text-decoration:none}
 .back a:hover,.back a:focus{text-decoration:underline}
-h1{color:var(--gold);font-size:1.6rem;margin:0 0 4px}
-h1 small{display:block;font-size:1.15rem;color:var(--cream);opacity:.9}
-p.lead{opacity:.85;margin:12px 0 24px}
+h1{color:var(--gold);font-size:clamp(1.2rem,5vw,1.6rem);margin:0 0 4px;line-height:1.3;overflow-wrap:anywhere}
+h1 small{display:block;font-size:.72em;color:var(--cream);opacity:.9;font-weight:500;overflow-wrap:anywhere}
+p.lead{opacity:.85;margin:12px 0 24px;overflow-wrap:anywhere}
 .cards{display:grid;gap:18px}
 @media(min-width:640px){.cards{grid-template-columns:1fr 1fr}}
-.card{border:1px solid rgba(212,168,67,.35);border-radius:16px;padding:16px;background:#131313;text-align:center}
+.card{border:1px solid rgba(212,168,67,.35);border-radius:16px;padding:16px;background:#131313;text-align:center;min-width:0}
 .card h2{color:var(--gold);font-size:1.1rem;margin:0 0 12px}
 .card img{width:100%;max-width:300px;height:auto;border-radius:10px}
-.hint{margin:12px 0 0;font-size:.85rem;opacity:.8;text-wrap:balance}
-.note{margin-top:24px;font-size:.88rem;opacity:.7;border-top:1px solid rgba(245,236,215,.15);padding-top:16px}
+.hint{margin:12px 0 0;font-size:.85rem;opacity:.8;text-wrap:balance;overflow-wrap:anywhere}
+.note{margin-top:24px;font-size:.88rem;opacity:.7;border-top:1px solid rgba(245,236,215,.15);padding-top:16px;overflow-wrap:anywhere}
 </style>
 </head>
 <body>
 <main>
-<p class="back"><a href="/supercat-site/">← Back to Super Cat / 返回招财猫</a></p>
-<h1>Buy Super Cat a coffee ☕<small>请招财猫喝杯咖啡</small></h1>
-<p class="lead">Super Cat is free. If it saved you money, a small tip keeps it running. 免费使用，觉得有用可以随意打赏。</p>
+<p class="back"><a id="tip-back" href="/supercat-site/">← Back to Super Cat / 返回招财猫</a></p>
+<h1><span id="tip-h1">Buy Super Cat a coffee ☕</span><small id="tip-sub">请招财猫喝杯咖啡</small></h1>
+<p class="lead" id="tip-lead">Super Cat is free. If it saved you money, a small tip keeps it running. 免费使用，觉得有用可以随意打赏。</p>
 <div class="cards">
 <section class="card">
 <h2>Zelle (US)</h2>
-<img src="zelle.png" alt="Zelle QR code">
-<p class="hint">On your phone? Screenshot → Zelle → Send → scan the code from your Photos.</p>
+<img id="tip-zelle" src="zelle.png" alt="Zelle QR code">
+<p class="hint" id="tip-zelle-hint">On your phone? Screenshot → Zelle → Send → scan the code from your Photos.</p>
 </section>
 <section class="card">
 <h2>支付宝 Alipay</h2>
-<img src="alipay.png" alt="Alipay QR code">
-<p class="hint">截图 → 支付宝扫一扫 → 相册</p>
+<img id="tip-alipay" src="alipay.png" alt="Alipay QR code">
+<p class="hint" id="tip-alipay-hint">截图 → 支付宝扫一扫 → 相册</p>
 </section>
 </div>
-<p class="note">Tipping is completely optional — you get nothing extra for it, and Super Cat stays the same for everyone. 打赏完全自愿，不会解锁任何额外功能。</p>
+<p class="note" id="tip-note">Tipping is completely optional — you get nothing extra for it, and Super Cat stays the same for everyone. 打赏完全自愿，不会解锁任何额外功能。</p>
 </main>
+<script>
+var TIP_LANGS = ["zh","en","ko","ja","es","fr","id","mn"];
+var TIP_KEYS = ["title","h1","subtitle","lead","zelleHint","alipayHint","note","back","zelleAlt","alipayAlt"];
+var TIP_COPY = {
+  en: {
+    title: "Buy Super Cat a coffee ☕",
+    h1: "Buy Super Cat a coffee ☕",
+    subtitle: "Optional — Super Cat stays free",
+    lead: "Super Cat is free. If it saved you money, a small tip keeps it running.",
+    zelleHint: "On your phone? Screenshot → Zelle → Send → scan the code from your Photos.",
+    alipayHint: "Screenshot → 支付宝 Alipay scan → Photos.",
+    note: "Tipping is completely optional — you get nothing extra for it, and Super Cat stays the same for everyone.",
+    back: "← Back to Super Cat",
+    zelleAlt: "Zelle QR code",
+    alipayAlt: "Alipay QR code"
+  },
+  zh: {
+    title: "请招财猫喝杯咖啡 ☕",
+    h1: "请招财猫喝杯咖啡 ☕",
+    subtitle: "完全自愿，招财猫始终免费",
+    lead: "招财猫免费使用。如果帮你省了钱，一点点打赏就能让它继续运转。",
+    zelleHint: "手机上的话：截图 → Zelle → Send → 从相册扫码。",
+    alipayHint: "截图 → 支付宝扫一扫 → 相册",
+    note: "打赏完全自愿，不会解锁任何额外功能，招财猫对每个人都一样。",
+    back: "← 返回招财猫",
+    zelleAlt: "Zelle 收款码",
+    alipayAlt: "支付宝收款码"
+  },
+  ko: {
+    title: "Super Cat에게 커피 한 잔 사 주기 ☕",
+    h1: "Super Cat에게 커피 한 잔 사 주기 ☕",
+    subtitle: "선택 사항이에요. Super Cat은 계속 무료입니다",
+    lead: "Super Cat은 무료예요. 돈을 아끼는 데 도움이 됐다면, 작은 팁이 서비스를 계속 운영하게 해 줘요.",
+    zelleHint: "휴대폰이라면? 스크린샷 → Zelle → Send → 사진 앱에서 코드를 스캔하세요.",
+    alipayHint: "스크린샷 → 支付宝 Alipay 스캔 → 앨범",
+    note: "팁은 완전히 선택 사항이에요 — 추가 기능은 없고, Super Cat은 모두에게 똑같이 무료입니다.",
+    back: "← Super Cat으로 돌아가기",
+    zelleAlt: "Zelle QR 코드",
+    alipayAlt: "支付宝 Alipay QR 코드"
+  },
+  ja: {
+    title: "Super Catにコーヒーをおごる ☕",
+    h1: "Super Catにコーヒーをおごる ☕",
+    subtitle: "任意です。Super Catは無料のまま",
+    lead: "Super Catは無料です。お金の節約に役立ったら、小さなチップが運営を支えます。",
+    zelleHint: "スマホなら？スクリーンショット → Zelle → Send → 写真アプリからコードを読み取ってください。",
+    alipayHint: "スクリーンショット → 支付宝 Alipayでスキャン → アルバム",
+    note: "チップは完全に任意です。追加機能はなく、Super Catは誰にとっても同じ無料のままです。",
+    back: "← Super Catに戻る",
+    zelleAlt: "ZelleのQRコード",
+    alipayAlt: "支付宝 AlipayのQRコード"
+  },
+  es: {
+    title: "Invita un café a Super Cat ☕",
+    h1: "Invita un café a Super Cat ☕",
+    subtitle: "Es opcional. Super Cat sigue siendo gratis",
+    lead: "Super Cat es gratis. Si te ayudó a ahorrar, una propina pequeña ayuda a mantenerlo.",
+    zelleHint: "¿En el teléfono? Captura → Zelle → Send → escanea el código desde Fotos.",
+    alipayHint: "Captura → escanear con 支付宝 Alipay → Álbum",
+    note: "La propina es totalmente opcional: no desbloquea nada extra y Super Cat sigue igual para todos.",
+    back: "← Volver a Super Cat",
+    zelleAlt: "Código QR de Zelle",
+    alipayAlt: "Código QR de 支付宝 Alipay"
+  },
+  fr: {
+    title: "Offrir un café à Super Cat ☕",
+    h1: "Offrir un café à Super Cat ☕",
+    subtitle: "Facultatif — Super Cat reste gratuit",
+    lead: "Super Cat est gratuit. S'il vous a aidé à économiser, un petit pourboire aide à le faire tourner.",
+    zelleHint: "Sur téléphone ? Capture → Zelle → Send → scannez le code depuis Photos.",
+    alipayHint: "Capture → scanner avec 支付宝 Alipay → Album",
+    note: "Le pourboire est entièrement facultatif — il ne débloque rien, et Super Cat reste le même pour tout le monde.",
+    back: "← Retour à Super Cat",
+    zelleAlt: "QR code Zelle",
+    alipayAlt: "QR code 支付宝 Alipay"
+  },
+  id: {
+    title: "Traktir Super Cat kopi ☕",
+    h1: "Traktir Super Cat kopi ☕",
+    subtitle: "Opsional — Super Cat tetap gratis",
+    lead: "Super Cat gratis. Kalau ini membantumu menghemat, tip kecil membantu tetap berjalan.",
+    zelleHint: "Di HP? Tangkapan layar → Zelle → Send → pindai kode dari Foto.",
+    alipayHint: "Tangkapan layar → pindai 支付宝 Alipay → Galeri",
+    note: "Tip sepenuhnya opsional — tidak membuka apa pun, dan Super Cat tetap sama untuk semua orang.",
+    back: "← Kembali ke Super Cat",
+    zelleAlt: "Kode QR Zelle",
+    alipayAlt: "Kode QR 支付宝 Alipay"
+  },
+  mn: {
+    title: "Super Cat-д нэг кофе авч өгөх ☕",
+    h1: "Super Cat-д нэг кофе авч өгөх ☕",
+    subtitle: "Сонголттой — Super Cat үнэгүй хэвээр",
+    lead: "Super Cat үнэгүй. Хэрэв мөнгө хэмнэхэд тусалсан бол жижиг хандив ажиллагааг үргэлжлүүлнэ.",
+    zelleHint: "Утсан дээр үү? Дэлгэцийн зураг → Zelle → Send → Зургаас кодыг уншуулна.",
+    alipayHint: "Дэлгэцийн зураг → 支付宝 Alipay-аар уншуулах → Цомог",
+    note: "Хандив бүрэн сайн дурын — нэмэлт юу ч нээгдэхгүй, Super Cat хүн бүрт ижил үнэгүй хэвээр.",
+    back: "← Super Cat руу буцах",
+    zelleAlt: "Zelle QR код",
+    alipayAlt: "支付宝 Alipay QR код"
+  }
+};
+function tipResolveLang(queryLang, storage, navLangs) {
+  var codes = { en:1, zh:1, ko:1, ja:1, es:1, fr:1, id:1, mn:1 };
+  function active(c) { return !!codes[c]; }
+  var q = String(queryLang || "").toLowerCase();
+  if (active(q)) return q;
+  try {
+    var stored = storage && storage.getItem("supercat_lang");
+    if (active(stored)) return stored;
+  } catch (err) {}
+  var list = navLangs || [];
+  for (var i = 0; i < list.length; i++) {
+    var code = String(list[i] || "").toLowerCase().split(/[-_]/)[0];
+    if (active(code)) return code;
+  }
+  return "en";
+}
+(function () {
+  if (typeof document === "undefined") return;
+  var q = "";
+  try { q = new URLSearchParams(location.search).get("lang") || ""; } catch (err) {}
+  var langs = [];
+  try { langs = navigator.languages || [navigator.language]; } catch (err) {}
+  var storage = null;
+  try { storage = localStorage; } catch (err) {}
+  var lang = tipResolveLang(q, storage, langs);
+  var t = TIP_COPY[lang] || TIP_COPY.en;
+  document.documentElement.lang = lang === "zh" ? "zh-CN" : lang;
+  document.title = t.title;
+  var text = {
+    "tip-h1": t.h1,
+    "tip-sub": t.subtitle,
+    "tip-lead": t.lead,
+    "tip-zelle-hint": t.zelleHint,
+    "tip-alipay-hint": t.alipayHint,
+    "tip-note": t.note,
+    "tip-back": t.back
+  };
+  for (var id in text) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = text[id];
+  }
+  var zelle = document.getElementById("tip-zelle");
+  if (zelle) zelle.setAttribute("alt", t.zelleAlt);
+  var alipay = document.getElementById("tip-alipay");
+  if (alipay) alipay.setAttribute("alt", t.alipayAlt);
+})();
+</script>
 </body>
 </html>
