@@ -1,0 +1,44 @@
+1:"$Sreact.fragment"
+2:"/supercat-site/_next/static/chunks/0umf92h1sb77c.js"
+3:I[39756,["$2"],"default"]
+4:I[37457,["$2"],"default"]
+5:"/supercat-site/_next/static/chunks/3k6cy6omdat4q.js"
+6:"/supercat-site/_next/static/chunks/1u4qa7rk--c8z.js"
+7:I[40451,["$2","$5","$6"],"default"]
+d:I[47257,["$2"],"ClientPageRoot"]
+e:"/supercat-site/_next/static/chunks/1h5-gz9s6i23f.js"
+f:"/supercat-site/_next/static/chunks/1cwthw33szbo0.js"
+10:"/supercat-site/_next/static/chunks/3ad7tx75gwi4t.js"
+11:I[31713,["$2","$e","$6","$f","$10"],"default"]
+14:I[97367,["$2"],"OutletBoundary"]
+15:"$Sreact.suspense"
+18:"ViewportBoundary"
+19:I[97367,["$2"],"$18"]
+1a:"MetadataBoundary"
+1b:I[97367,["$2"],"$1a"]
+:HL["/supercat-site/_next/static/chunks/00cmyn9jc78yb.css","style"]
+9:X
+c:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","$Ld",null,{"Component":"$11","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@12","$@13"]}}],[["$","script","script-0",{"src":"/supercat-site/_next/static/chunks/1h5-gz9s6i23f.js","async":true}],["$","script","script-1",{"src":"/supercat-site/_next/static/chunks/1u4qa7rk--c8z.js","async":true}],["$","script","script-2",{"src":"/supercat-site/_next/static/chunks/1cwthw33szbo0.js","async":true}],["$","script","script-3",{"src":"/supercat-site/_next/static/chunks/3ad7tx75gwi4t.js","async":true}]],["$","$L14",null,{"children":["$","$15",null,{"name":"Next.MetadataOutlet","children":"$@16"}]}]]}],"p":"$@17","v":null,"s":"$9"}}]]
+a:[["children",{"s":"zh","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}]}]]}],"p":"$@b","v":null,"s":"$9"},"c":"$Qc"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/supercat-site/_next/static/chunks/00cmyn9jc78yb.css","precedence":"next"}],["$","script","script-0",{"src":"/supercat-site/_next/static/chunks/0umf92h1sb77c.js","async":true}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"WebApplication\",\"name\":\"Super Cat\",\"alternateName\":\"招财猫\",\"url\":\"https://wyc77209-source.github.io/supercat-site/\",\"description\":\"Super Cat 官网 — free AI money-saving helper for students (招财猫). No sign-up, nothing to install. Spend stays on your phone.\",\"applicationCategory\":\"FinanceApplication\",\"operatingSystem\":\"Web Browser\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\"},\"featureList\":[\"AI-powered savings recommendations\",\"Bill scanning and overpay detection\",\"Privacy-first local storage\",\"No account required\",\"Multi-language support\",\"Student-specific optimizations\"],\"audience\":{\"@type\":\"EducationalAudience\",\"educationalRole\":\"student\"}}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Super Cat\",\"url\":\"https://wyc77209-source.github.io/supercat-site/\",\"logo\":\"https://wyc77209-source.github.io/supercat-site/icon-512.png\",\"sameAs\":[],\"description\":\"Super Cat 官网 — free AI money-saving helper for students (招财猫). No sign-up, nothing to install. Spend stays on your phone.\"}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://wyc77209-source.github.io/supercat-site/\"}]}"}}]]}],["$","body",null,{"className":"antialiased","children":["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[["$","$L7",null,{}],[]]}]}]]}]]}],"p":"$@8","v":null,"s":"$9"},"c":"$Qa"},"h":{"r":["$","$1","h",{"children":[null,["$","$L19",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#0a0a0a"}]]}],["$","$L1b",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$15",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Super Cat 官网 · 招财猫 | 留学生 AI 省钱助手"}],["$","meta","1",{"name":"description","content":"Super Cat 官网（招财猫）— 免费 AI 省钱助手，面向留学生。无需注册、无需安装，花销只留在你的手机上。"}],["$","meta","2",{"name":"application-name","content":"Super Cat"}],["$","link","3",{"rel":"manifest","href":"/supercat-site/manifest.webmanifest"}],["$","meta","4",{"name":"apple-mobile-web-app-capable","content":"yes"}],["$","link","5",{"rel":"canonical","href":"https://wyc77209-source.github.io/supercat-site/zh/"}],["$","link","6",{"rel":"alternate","hrefLang":"en","href":"https://wyc77209-source.github.io/supercat-site/"}],["$","link","7",{"rel":"alternate","hrefLang":"zh-CN","href":"https://wyc77209-source.github.io/supercat-site/zh/"}],["$","link","8",{"rel":"alternate","hrefLang":"x-default","href":"https://wyc77209-source.github.io/supercat-site/"}],["$","meta","9",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","10",{"name":"apple-mobile-web-app-title","content":"Super Cat"}],["$","meta","11",{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"}],["$","meta","12",{"property":"og:title","content":"Super Cat 官网 · 招财猫 — 免费 AI 省钱助手"}],["$","meta","13",{"property":"og:description","content":"无需注册 · 无需安装。输入日常花销，获得排序后的省钱方案。花销只留在本机。"}],["$","meta","14",{"property":"og:url","content":"https://wyc77209-source.github.io/supercat-site/zh/"}],["$","meta","15",{"property":"og:site_name","content":"Super Cat"}],["$","meta","16",{"property":"og:image","content":"https://wyc77209-source.github.io/supercat-site/og.png"}],["$","meta","17",{"property":"og:image:width","content":"1200"}],"$L1c","$L1d","$L1e","$L1f","$L20","$L21","$L22","$L23","$L24"]}]}],null]}],null]}],"p":"$@25","v":null,"s":"$9"}},"a":"$@26","u":"$@27","b":"LBfCmbgvn8GVsPUQL5Bej"}
+28:I[27201,["$2"],"IconMark"]
+12:{}
+13:"$c:0:1:d:r:props:children:0:props:serverProvidedParams:params"
+16:null
+1c:["$","meta","18",{"property":"og:image:height","content":"630"}]
+1d:["$","meta","19",{"property":"og:image:alt","content":"Super Cat 官网 · 招财猫 — free AI money-saving helper for students. No sign-up, nothing to install."}]
+1e:["$","meta","20",{"property":"og:type","content":"website"}]
+1f:["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}]
+20:["$","meta","22",{"name":"twitter:title","content":"Super Cat 官网 · 招财猫 — 免费 AI 省钱助手"}]
+21:["$","meta","23",{"name":"twitter:description","content":"无需注册 · 无需安装。输入日常花销，获得排序后的省钱方案。花销只留在本机。"}]
+22:["$","meta","24",{"name":"twitter:image","content":"https://wyc77209-source.github.io/supercat-site/og.png"}]
+23:["$","link","25",{"rel":"apple-touch-icon","href":"/supercat-site/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]
+24:["$","$L28","26",{}]
+9:300
+27:true
+9:C
+26:0
+b:"$undefined"
+8:"$undefined"
+25:"$undefined"
+17:"$undefined"
