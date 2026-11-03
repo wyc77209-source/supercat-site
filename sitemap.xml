@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://wyc77209-source.github.io/supercat-site/</loc>
+<lastmod>2026-11-03T16:50:09.293Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://wyc77209-source.github.io/supercat-site/heart/</loc>
+<lastmod>2026-11-03T16:50:09.293Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://wyc77209-source.github.io/supercat-site/qr/</loc>
+<lastmod>2026-11-03T16:50:09.293Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://wyc77209-source.github.io/supercat-site/qr/print/</loc>
+<lastmod>2026-11-03T16:50:09.293Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+</urlset>

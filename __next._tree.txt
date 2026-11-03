@@ -1,3 +1,3 @@
-:HL["/supercat-site/_next/static/chunks/3cf6n293m3od9.css","style"]
+:HL["/supercat-site/_next/static/chunks/199f6rd1k1g6a.css","style"]
 1:[["children",{"s":"__PAGE__","h":160}]]
-0:{"b":"qJ2tWJtZgahok7I4vwZTW","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"KK9qOiGplzKaZcNtQ1zIy","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

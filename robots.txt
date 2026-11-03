@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://wyc77209-source.github.io/supercat-site/sitemap.xml
