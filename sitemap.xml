@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url>
 <loc>https://wyc77209-source.github.io/supercat-site/</loc>
-<lastmod>2026-11-03T18:25:50.720Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://wyc77209-source.github.io/supercat-site/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://wyc77209-source.github.io/supercat-site/zh/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://wyc77209-source.github.io/supercat-site/" />
+<lastmod>2026-11-04T09:44:01.089Z</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 <url>
 <loc>https://wyc77209-source.github.io/supercat-site/zh/</loc>
-<lastmod>2026-11-03T18:25:50.720Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://wyc77209-source.github.io/supercat-site/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://wyc77209-source.github.io/supercat-site/zh/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://wyc77209-source.github.io/supercat-site/" />
+<lastmod>2026-11-04T09:44:01.089Z</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.95</priority>
 </url>
 <url>
 <loc>https://wyc77209-source.github.io/supercat-site/heart/</loc>
-<lastmod>2026-11-03T18:25:50.720Z</lastmod>
+<lastmod>2026-11-04T09:44:01.089Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://wyc77209-source.github.io/supercat-site/qr/</loc>
-<lastmod>2026-11-03T18:25:50.720Z</lastmod>
+<lastmod>2026-11-04T09:44:01.089Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 <url>
 <loc>https://wyc77209-source.github.io/supercat-site/qr/print/</loc>
-<lastmod>2026-11-03T18:25:50.720Z</lastmod>
+<lastmod>2026-11-04T09:44:01.089Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.3</priority>
 </url>
