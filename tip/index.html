@@ -179,6 +179,18 @@ function tipResolveLang(queryLang, storage, navLangs) {
   }
   return "en";
 }
+function tipPreferAlipayFirst(lang) {
+  return lang === "zh";
+}
+function tipBackHref(lang) {
+  return lang === "zh" ? "/supercat-site/zh/" : "/supercat-site/";
+}
+function tipApplyLangLayout(lang, cardsEl, backEl) {
+  if (backEl) backEl.setAttribute("href", tipBackHref(lang));
+  if (!tipPreferAlipayFirst(lang) || !cardsEl) return;
+  var cards = cardsEl.querySelectorAll(".card");
+  if (cards.length >= 2) cardsEl.appendChild(cards[0]);
+}
 (function () {
   if (typeof document === "undefined") return;
   var q = "";
@@ -188,6 +200,7 @@ function tipResolveLang(queryLang, storage, navLangs) {
   var storage = null;
   try { storage = localStorage; } catch (err) {}
   var lang = tipResolveLang(q, storage, langs);
+  tipApplyLangLayout(lang, document.querySelector(".cards"), document.getElementById("tip-back"));
   var t = TIP_COPY[lang] || TIP_COPY.en;
   document.documentElement.lang = lang === "zh" ? "zh-CN" : lang;
   document.title = t.title;
