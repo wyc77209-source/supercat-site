@@ -1,6 +1,6 @@
-:HL["/supercat-site/_next/static/chunks/3slcv4ie5avwb.css","style"]
+:HL["/supercat-site/_next/static/chunks/1_b-jxx41wbw3.css","style"]
 4:[["children",{"s":"__PAGE__","h":160}]]
 3:[["children",{"s":"print","h":96,"c":"$Q4"}]]
 2:[["children",{"s":"qr","h":96,"c":"$Q3"}]]
 1:[["children",{"s":"(en)","h":112,"c":"$Q2"}]]
-0:{"b":"CSZGGKXQq4I33G1EUYkXt","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"Oj73ccM8E0jEY3oaPDIQZ","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
